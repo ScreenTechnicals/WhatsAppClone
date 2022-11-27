@@ -150,6 +150,7 @@ const Page = ({ params }) => {
               setMessage(e.target.value);
             }}
             value={message}
+            required
           />
           <button className="absolute right-3 text-2xl">
             <IoMdSend />
