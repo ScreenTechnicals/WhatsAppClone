@@ -121,7 +121,7 @@ const Page = ({ params }) => {
                 hour12: true,
               });
               return (
-                <div key={msg?.id} className={msg?.data()?.email === user?.email ? "w-full flex" : "w-full flex justify-end"}>
+                <div key={msg?.id} className={msg?.data()?.email === user?.email ? "w-full flex justify-end" : "w-full flex"}>
                   <div className="max-w-[400px] border bg-[#ffffff] rounded-xl shadow-md p-5 m-5">
                     <p>{msg?.data()?.message}</p>
                     <p className="text-end text-gray-400">{time}</p>
