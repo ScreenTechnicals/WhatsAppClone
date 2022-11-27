@@ -51,7 +51,11 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <head />
+      <head>
+      <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"  />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className="w-screen overflow-hidden flex">
         <Sidebar user={user} setProfileBar={setProfileBar} />
         <div className="w-full">{children}</div>

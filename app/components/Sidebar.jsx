@@ -30,7 +30,7 @@ const Sidebar = ({
 
 
   return (
-    <div className="lg:w-[550px] w-screen h-screen fixed lg:sticky top-0 left-0 bg-[#fff] lg:z-[999] -z-[1]">
+    <div className="lg:w-[600px] w-screen h-screen fixed lg:sticky top-0 left-0 bg-[#fff] lg:z-[999] -z-[1]">
       <div className="flex items-center w-full justify-between py-5 px-10">
         <Link href={"/"}>
           <button className="text-2xl font-bold">Whatsapp Clone</button>

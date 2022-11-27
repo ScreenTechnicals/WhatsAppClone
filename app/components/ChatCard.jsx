@@ -18,7 +18,8 @@ const ChatCard = ({ chat, user }) => {
   console.log();
   return (
     <Link href={`/chats/${chat?.id}`}>
-    <div className="w-full flex rounded-xl justify-between border shadow-md px-5 py-3 items-center space-x-7 relative cursor-pointer hover:scale-95 transition-transform">
+    <div className="w-full flex rounded-xl justify-between border shadow-md px-5 py-3 items-center space-x-7 relative cursor-pointer hover:scale-95 transition-transform my-2">
+      <div className="flex items-center">
       <div className="mr-5">
         {/* <FaRegUser className="text-2xl" /> */}
         <Image
@@ -30,8 +31,9 @@ const ChatCard = ({ chat, user }) => {
         />
         {/* <div className=""></div> */}
       </div>
-      <div className="relative right-14">
+      <div className="">
         <span>{userSnapshots?.docs?.[0]?.data()?.name}</span>
+      </div>
       </div>
       <div className="">
         {userSnapshots?.docs?.[0]?.data()?.online && <HiOutlineStatusOnline className="text-[#00c303] text-3xl animate-pulse" />}
