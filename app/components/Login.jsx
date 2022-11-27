@@ -16,7 +16,7 @@ const Login = () => {
       <body>
         <div className="w-screen h-screen flex justify-center items-center">
           <div>
-            <div className="flex items-center p-5">
+            <div className="flex items-center p-5 lg:flex-row flex-col">
               <Image
                 src={"/images/logo.png"}
                 width={120}
@@ -25,7 +25,7 @@ const Login = () => {
                 priority={true}
                 alt="logo"
               />
-              <p className="text-6xl font-bold">Whatsapp Clone</p>
+              <p className="lg:text-6xl text-2xl font-bold">Whatsapp Clone</p>
             </div>
             <div className="mx-auto text-center">
               <button
